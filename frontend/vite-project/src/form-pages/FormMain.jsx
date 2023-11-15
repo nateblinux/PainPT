@@ -36,9 +36,14 @@ export default class FormMain extends Component{
     }
 
     nextStep = () =>{
-        const {step, input0} = this.state;
+        const {step} = this.state;
         //console.log(this.state);
         this.setState({step: step + 1});
+    }
+
+    goToPage = (page) =>{
+        const { step } = this.state;
+        this.setState({step: page});
     }
     
     //handle the changes
