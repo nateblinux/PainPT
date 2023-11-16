@@ -1,5 +1,6 @@
 import React from 'react'
 import { Box, InputLabel, MenuItem, FormControl, Select, RadioGroup, FormControlLabel, Radio } from '@mui/material'
+import { sizing } from '@mui/system';
 
 const PainScaleActive = ({nextStep, prevStep, handleChange, values}) =>{
     const Continue = e =>{
@@ -18,13 +19,14 @@ const PainScaleActive = ({nextStep, prevStep, handleChange, values}) =>{
     return (
         <form action="">
             <h4>What type of pain are you experiencing?</h4>
-            <Box sx={{ minWidth: 500 }}>
-                <FormControl variant="filled" halfWidth>
+            <Box>
+                <FormControl variant="filled">
                 <InputLabel id="demo-simple-select-label">Select a pain type</InputLabel>
                 <Select
                     value={values.pain_type}
                     label="pain_type_desc"
                     onChange={handleChange('pain_type')}
+                    sx={{width: '25em'}}
                 >
                     <MenuItem value="sharp">Sharp</MenuItem>
                     <MenuItem value="dull">Dull</MenuItem>
