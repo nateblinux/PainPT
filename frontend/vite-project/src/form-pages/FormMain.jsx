@@ -15,6 +15,7 @@ export default class FormMain extends Component{
         radio: "0",
         radio1: "0",
         message: '',
+        location: '',
     }
 
     //step through form forward + backwards
