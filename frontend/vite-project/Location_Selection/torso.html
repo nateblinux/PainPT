@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Torso</title>
-    <script src="../src/form-pages/FirstPage.jsx"></script>
+    <link rel="stylesheet" href="location_Selection.css">
 </head>
 <body>
 <p>Please click on what hurts</p>
-
+<div class = "holder">
 
 <img src="../src/Pics/torso.png" usemap="#image-map" alt="">
 
 <map name="image-map">
-    <area target="" alt="Right Peck" title="Right Peck" href="http://localhost:5000?location=Right_Peck" coords="269,32,35,417" shape="rect">
-    <area target="" alt="Left Peck" title="Left Peck" href="http://localhost:5000?location=Left_Peck" coords="333,34,567,421" shape="rect">
-    <area target="" alt="Sternum" title="Sternum" href="http://localhost:5000?location=Sturnem" coords="271,34,328,413" shape="rect">
-    <area target="" alt="Abdomen" title="Abdomen" href="http://localhost:5000?location=Abdomen" coords="77,421,566,689" shape="rect">
+    <area target="" alt="Right Peck" title="Right Peck" href="http://localhost:5173?location=Right_Peck" coords="269,32,35,417" shape="rect">
+    <area target="" alt="Left Peck" title="Left Peck" href="http://localhost:5173?location=Left_Peck" coords="333,34,567,421" shape="rect">
+    <area target="" alt="Sternum" title="Sternum" href="http://localhost:5173?location=Sturnem" coords="271,34,328,413" shape="rect">
+    <area target="" alt="Abdomen" title="Abdomen" href="http://localhost:5173?location=Abdomen" coords="77,421,566,689" shape="rect">
 </map>
-
+</div>
 <form action="front.html">
     <button type="submit">Back</button>
 </form>
+<script src="resizer.js"></script>
 </body>
 </html>
