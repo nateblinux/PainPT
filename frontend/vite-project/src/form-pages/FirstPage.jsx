@@ -2,6 +2,9 @@ import React from 'react'
 import { RadioGroup, FormControlLabel, Radio } from '@mui/material'
 
 const FirstPage = ({nextStep, handleChange, values}) =>{
+
+    const queryParams = new URLSearchParams(window.location.search)
+    const location = queryParams.get("location")
     const Continue = e =>{
         e.preventDefault();
         nextStep();
@@ -9,6 +12,8 @@ const FirstPage = ({nextStep, handleChange, values}) =>{
 
     return (
         <form action="">
+
+
         <input
           type="text"
           placeholder="Email Address"

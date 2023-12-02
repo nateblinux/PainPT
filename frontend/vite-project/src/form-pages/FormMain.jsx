@@ -9,6 +9,7 @@ import SymptomsPage from './Symptoms';
 
 
 export default class FormMain extends Component{
+
     state = { //store the state of the form - including any response from server
         step: 0,
         input0: '',
@@ -27,6 +28,7 @@ export default class FormMain extends Component{
         symptoms_7: '',
         symptoms_8: '',
         message: '', //keep message at bottom
+
     }
 
     //step through form forward + backwards
