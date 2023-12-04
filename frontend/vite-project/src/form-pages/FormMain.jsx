@@ -6,6 +6,7 @@ import ResPage from './ResPage';
 import PainScaleActive from './PainScaleActive';
 import PainProgression from './PainProgression';
 import SymptomsPage from './Symptoms';
+import SecondPage_OpenEnded from './SecondPage_OpenEnded.jsx';
 
 
 export default class FormMain extends Component{
@@ -120,7 +121,18 @@ export default class FormMain extends Component{
                     />
                 )
 
-            case 4: //keep this page last
+             case 4:
+                return(
+                    <SecondPage_OpenEnded
+                        nextStep={this.nextStep}
+                        prevStep={this.prevStep}
+                        handleChange={this.handleChange}
+                        submitForm={this.submitForm}
+                        values={values}
+                    />
+                )
+
+            case 5: //keep this page last
                 return(
                     <VerifyPage 
                         nextStep={this.nextStep}
