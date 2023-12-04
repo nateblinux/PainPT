@@ -27,6 +27,12 @@ export default class FormMain extends Component{
         symptoms_6: '',
         symptoms_7: '',
         symptoms_8: '',
+        radio_question1: '',
+        openEnded_question2: '',
+        openEnded_question3: '',
+        openEnded_question4: '',
+        openEnded_question5: '',
+        openEnded_question6: '',
         message: '', //keep message at bottom
     }
 
