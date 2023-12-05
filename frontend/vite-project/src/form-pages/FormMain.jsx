@@ -7,12 +7,22 @@ import PainScaleActive from './PainScaleActive';
 import PainProgression from './PainProgression';
 import SymptomsPage from './Symptoms';
 import SecondPage_OpenEnded from './SecondPage_OpenEnded.jsx';
+import Front from './location-selection/Front.jsx';
+import Back from './location-selection/Back.jsx';
+import Head from './location-selection/Head.jsx';
+import LeftArm from './location-selection/LeftArm.jsx';
+import RightArm from './location-selection/RightArm.jsx';
+import Torso from './location-selection/Torso.jsx';
+import LeftLeg from './location-selection/LeftLeg.jsx';
+import RightLeg from './location-selection/RightLeg.jsx';
+import LeftHand from './location-selection/LeftHand.jsx';
+import RightHand from './location-selection/RightHand.jsx';
 
 
 export default class FormMain extends Component{
     state = { //store the state of the form - including any response from server
-        step: 0,
-        input0: '',
+        step: 7,
+        location: '',
         radio_pain_scale_active: "0",
         radio_pain_scale_rest: "0",
         pain_progression:'',
@@ -56,6 +66,10 @@ export default class FormMain extends Component{
     //handle the changes
     handleChange = input => e =>{
         this.setState({[input]: e.target.value});
+    }
+
+    setLocation = value =>{
+        this.setState({["location"] : value});
     }
 
     //pass to server and get response
@@ -147,12 +161,92 @@ export default class FormMain extends Component{
                         submitForm={this.submitForm}
                         values={values}
                     />)
-
-            default:
+            case 6:
                 return(<ResPage 
                     response={ this.state.message } 
                     prevStep={this.prevStep}                    
                 />)
+            case 7:
+                return(
+                    <Front 
+                        handleChange={this.handleChange} 
+                        nextStep={this.nextStep}
+                        goToPage={this.goToPage} 
+                    />
+                )
+            case 8:
+                return(
+                    <Back 
+                        setLocation={this.setLocation}
+                        prevStep={this.prevStep}
+                        goToPage={this.goToPage} 
+                    />
+                )
+            case 9:
+               return(
+                    <Head 
+                        setLocation={this.setLocation}
+                        prevStep={this.prevStep}
+                        goToPage={this.goToPage} 
+                    />
+                )
+            case 10:
+                return(
+                    <LeftArm 
+                        setLocation={this.setLocation}
+                        prevStep={this.prevStep}
+                        goToPage={this.goToPage} 
+                    />
+                )
+            case 11:
+                return(
+                    <RightArm
+                        setLocation={this.setLocation}
+                        prevStep={this.prevStep}
+                        goToPage={this.goToPage} 
+                    />
+                )    
+            case 12:
+                return(
+                    <Torso
+                        setLocation={this.setLocation}
+                        prevStep={this.prevStep}
+                        goToPage={this.goToPage} 
+                    />
+                )  
+            case 13:
+                return(
+                    <LeftLeg
+                        setLocation={this.setLocation}
+                        prevStep={this.prevStep}
+                        goToPage={this.goToPage} 
+                    />
+                ) 
+            case 14:
+                return(
+                    <RightLeg
+                        setLocation={this.setLocation}
+                        prevStep={this.prevStep}
+                        goToPage={this.goToPage} 
+                    />
+                )  
+            case 15:
+                return(
+                    <LeftHand
+                        setLocation={this.setLocation}
+                        prevStep={this.prevStep}
+                        goToPage={this.goToPage} 
+                    />
+                )  
+            case 16:
+                return(
+                    <RightHand
+                        setLocation={this.setLocation}
+                        prevStep={this.prevStep}
+                        goToPage={this.goToPage} 
+                    />
+                ) 
+
         }
 
     }

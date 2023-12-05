@@ -12,8 +12,8 @@ const FirstPage = ({nextStep, handleChange, values}) =>{
         <input
           type="text"
           placeholder="Email Address"
-          defaultValue={values.input0}
-          onChange={handleChange('input0')}
+          defaultValue={values.location}
+          onChange={handleChange('location')}
           />
         <button type="submit" onClick={ Continue }>Next</button>
         
