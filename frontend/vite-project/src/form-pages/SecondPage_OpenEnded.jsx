@@ -92,9 +92,8 @@ const SecondPage_OpenEnded = ({nextStep, prevStep, handleChange, values}) =>{
 
                     </FormControl>
                 </Box>
-
-                <button type="submit" onClick={ Continue }>Continue</button>
                 <button type="submit" onClick={ goBack }>Back</button>
+                <button type="submit" onClick={ Continue }>Continue</button>
             </form>
 
 

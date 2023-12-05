@@ -15,9 +15,9 @@ const VerifyPage = ({nextStep, prevStep, handleChange, submitForm, values})=>{
 
     return(
         <form action="">
-          <h1>ready to submit?</h1>        
+          <h2>ready to submit?</h2>
+        <button type="submit" onClick={ goBack }>Back</button>        
         <button type="submit" onClick={ Continue }>Continue</button>
-        <button type="submit" onClick={ goBack }>Back</button>
       </form>
     )
 }

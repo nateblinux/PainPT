@@ -66,8 +66,8 @@ const PainProgression = ({nextStep, prevStep, handleChange, values}) =>{
           </ToggleButtonGroup>
           <h3></h3>
 
-        <button type="submit" onClick={ Continue }>Continue</button>
         <button type="submit" onClick={ goBack }>Back</button>
+        <button type="submit" onClick={ Continue }>Continue</button>
         
       </form> 
     )

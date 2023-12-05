@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #892b2b;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,11 +16,11 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #341b27;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #f25353;
 }
 
 body {
@@ -30,6 +30,18 @@ body {
   text-align: center;
   min-width: 320px;
   min-height: 100vh;
+  background-image: url("https://img.freepik.com/premium-vector/red-heart-shape-middle-adhesive-bandage-pattern-background-love-flat-vector-illustration_463676-1443.jpg?w=800");
+  background-color: #cccccc;
+}
+
+header{
+  text-align: center;  
+  height: 100vh;
+}
+
+form {
+  background-color:rgb(183, 107, 107) ;
+  border: 6px dashed rgb(244, 177, 101); 
 }
 
 button {
@@ -39,13 +51,15 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #823232;
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
-  border-color: #646cff;
+  border-color: #ffa764;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -57,9 +71,21 @@ button:focus-visible {
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: #ff7490;
   }
   button {
     background-color: #f9f9f9;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
