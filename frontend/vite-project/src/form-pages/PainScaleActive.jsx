@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, InputLabel, MenuItem, FormControl, Select, RadioGroup, FormControlLabel, Radio } from '@mui/material'
+import { Box, InputLabel, MenuItem, FormControl, Select, RadioGroup, FormControlLabel, Radio, TextField } from '@mui/material'
 import { sizing } from '@mui/system';
 
 const PainScaleActive = ({nextStep, prevStep, handleChange, values}) =>{
@@ -18,6 +18,12 @@ const PainScaleActive = ({nextStep, prevStep, handleChange, values}) =>{
 
     return (
         <form action="">
+            <h4>Your pain is in your:</h4>
+            <TextField
+                variant="outlined"
+                defaultValue={values.location}
+                onChange={handleChange('location')}
+            />
             <h4>What type of pain are you experiencing?</h4>
             <Box>
                 <FormControl variant="filled">

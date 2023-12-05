@@ -79,6 +79,11 @@ button:focus-visible {
   }
 }
 
+pre {
+  white-space: pre-wrap;
+  word-break: keep-all
+}
+
 
 
 
