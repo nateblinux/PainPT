@@ -69,8 +69,8 @@ const PainScaleActive = ({nextStep, prevStep, handleChange, values}) =>{
                 <p>(Most)</p>
             </RadioGroup>
   
-        <button type="submit" onClick={ Continue }>Continue</button>
         <button type="submit" onClick={ goBack }>Back</button>
+        <button type="submit" onClick={ Continue }>Continue</button>
       </form> 
     )
 }

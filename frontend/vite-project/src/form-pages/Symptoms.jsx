@@ -37,8 +37,8 @@ const SymptomsPage = ({nextStep, prevStep, handleChange, values}) =>{
                 </Stack>
             </Box>
             <h3></h3>
-        <button type="submit" onClick={ Continue }>Continue</button>
         <button type="submit" onClick={ goBack }>Back</button>
+        <button type="submit" onClick={ Continue }>Continue</button>
       </form> 
     )
 }
