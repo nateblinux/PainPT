@@ -75,6 +75,7 @@ export default class FormMain extends Component{
     //pass to server and get response
     submitForm = async () =>{
         const state = this.state;
+        state.message = "";
         console.log(state);
         //console.log(input0);
         fetch("http://localhost:8000/", {
