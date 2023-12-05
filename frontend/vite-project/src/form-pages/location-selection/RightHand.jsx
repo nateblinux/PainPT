@@ -58,6 +58,8 @@ const RightHand = ({setLocation, goToPage, prevStep}) => {
                 src={img}
                 map={MAP}
                 onClick={area => clicked(area.name)}
+                imgWidth={600}
+                width={300}
             />
         </div>
     )

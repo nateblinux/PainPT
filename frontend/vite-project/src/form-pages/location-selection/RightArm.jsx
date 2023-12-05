@@ -48,6 +48,8 @@ const RightArm = ({setLocation, goToPage, prevStep}) => {
                 src={img}
                 map={MAP}
                 onClick={area => clicked(area)}
+                imgWidth={500}
+                width={300}
             />
         </div>
     )

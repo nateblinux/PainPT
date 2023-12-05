@@ -42,6 +42,7 @@ header{
 form {
   background-color:rgb(183, 107, 107) ;
   border: 6px dashed rgb(244, 177, 101); 
+  padding:0.6em;
 }
 
 button {

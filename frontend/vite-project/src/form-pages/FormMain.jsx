@@ -21,7 +21,7 @@ import RightHand from './location-selection/RightHand.jsx';
 
 export default class FormMain extends Component{
     state = { //store the state of the form - including any response from server
-        step: 7,
+        step: 0,
         location: '',
         radio_pain_scale_active: "0",
         radio_pain_scale_rest: "0",
@@ -104,7 +104,7 @@ export default class FormMain extends Component{
             case 0:
                 return(
                      <FirstPage 
-                        nextStep={this.nextStep}
+                        nextStep={this.goToPage}
                         handleChange={this.handleChange}
                         values={values}
                     />

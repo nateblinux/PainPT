@@ -38,6 +38,8 @@ const Back = ({setLocation, goToPage, prevStep}) => {
                 src={img}
                 map={MAP}
                 onClick={area => clicked(area.name)}
+                imgWidth={500}
+                width={300}
             />
             <button type="submit" onClick={ goBack }>Front View</button>
         </div>

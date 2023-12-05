@@ -47,6 +47,8 @@ const RightLeg = ({setLocation, goToPage, prevStep}) => {
                 src={img}
                 map={MAP}
                 onClick={area => clicked(area.name)}
+                imgWidth={500}
+                width={300}
             />
         </div>
     )

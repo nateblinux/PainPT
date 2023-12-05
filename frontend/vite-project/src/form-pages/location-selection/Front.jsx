@@ -41,6 +41,8 @@ const Front = ({handleChange, goToPage, nextStep}) => {
                 src={front}
                 map={MAP}
                 onClick={area => clicked(area)}
+                imgWidth={531}
+                width={300}
             />
             <button type="submit" onClick={ Continue }>Back View</button>
         </div>
