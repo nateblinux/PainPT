@@ -8,8 +8,8 @@ const ResPage = ({response, prevStep}) =>{
 
     return(
         <>
-        <p> {response} </p>
         <form>
+        <pre> {response} </pre>
             <button type="submit" onClick={ goBack }>Back</button>
         </form>
         </>

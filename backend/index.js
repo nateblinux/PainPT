@@ -29,16 +29,48 @@ app.listen(port, () => {
     console.log(`listening on port ${port}`);
 });
 
+/*
+        step: 0,
+        location: '',
+        radio_pain_scale_active: "0",
+        radio_pain_scale_rest: "0",
+        pain_progression:'',
+        pain_start_date:'',
+        pain_type: '',
+        pain_experience: '',
+        symptoms_1: '',
+        symptoms_2: '',
+        symptoms_3: '',
+        symptoms_4: '',
+        symptoms_5: '',
+        symptoms_6: '',
+        symptoms_7: '',
+        symptoms_8: '',
+        radio_question1: '',
+        openEnded_question2: '',
+        openEnded_question3: '',
+        openEnded_question4: '',
+        openEnded_question5: '',
+        openEnded_question6: '',
+        message: '', //keep message at bottom
+ */
+
 const generatePrompt = (data) => {
     console.log(data);
     const prompt = `I have experienced a sport injury. You must give me recommendations on what it could be based on the following symptoms:
-    I am experiencing pain in my left tricep area
+    I am experiencing pain in my ${data.location}
     When im moving I would rate my pain: ${data.radio_pain_scale_active}
     When im resting I would rate my pain: ${data.radio_pain_scale_rest}
     My pain has ${data.pain_progression} over the ${data.pain_start_date}
     It is a ${data.pain_type} pain
     It is ${data.constant}
-    I also have ${data.symptoms_1}, ${data.symptoms_3}, ${data.symptoms_3}, ${data.symptoms_4}, ${data.symptoms_5}, ${data.symptoms_6}, ${data.symptoms_7}, ${data.symptoms_8}`;
+    I also have ${data.symptoms_1}, ${data.symptoms_3}, ${data.symptoms_3}, ${data.symptoms_4}, ${data.symptoms_5}, ${data.symptoms_6}, ${data.symptoms_7}, ${data.symptoms_8}
+    Have i seeked treatment for the problem? ${data.radio_question1},
+    I have tried the following treatments ${data.openEnded_question2}
+    It happened when ${data.openEnded_question3}
+    It gets worse when ${data.openEnded_question4}
+    It gets better when ${data.openEnded_question5}
+    It also ${data.openEnded_question6}`;
     return prompt;
 }
 
