@@ -1,10 +1,15 @@
 import React from "react";
 import loading from "../assets/loading-band-aid.png"
 
-const ResPage = ({response, prevStep}) =>{
+const ResPage = ({response, prevStep, goTo}) =>{
     const goBack = e =>{
         e.preventDefault();
         prevStep();
+    }
+
+    const startOver = e => {
+        e.preventDefault();
+        goTo(0);
     }
 
     const processRes = res =>{
@@ -26,6 +31,7 @@ const ResPage = ({response, prevStep}) =>{
         <form>
             {processRes(response)}
             <button type="submit" onClick={ goBack }>Back</button>
+            <button type="submit" onClick={ startOver }>Done</button>
         </form>
         </>
     )

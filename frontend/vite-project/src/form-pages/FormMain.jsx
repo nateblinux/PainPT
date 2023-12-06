@@ -165,7 +165,8 @@ export default class FormMain extends Component{
             case 6:
                 return(<ResPage 
                     response={ this.state.message } 
-                    prevStep={this.prevStep}                    
+                    prevStep={this.prevStep}    
+                    goTo={this.goToPage}                
                 />)
             case 7:
                 return(

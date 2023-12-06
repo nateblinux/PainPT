@@ -86,9 +86,11 @@ pre {
 }
 
 .loader{
-  width:125px;
+  display: flex;
+  justify-content: center;
   height:125px;
   padding: 25px;
+  text-align: center;
 }
 
 .loader img{
