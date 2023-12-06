@@ -75,6 +75,7 @@ export default class FormMain extends Component{
     //pass to server and get response
     submitForm = async () =>{
         const state = this.state;
+        state.message = "";
         console.log(state);
         //console.log(input0);
         fetch("http://localhost:8000/", {
@@ -164,7 +165,8 @@ export default class FormMain extends Component{
             case 6:
                 return(<ResPage 
                     response={ this.state.message } 
-                    prevStep={this.prevStep}                    
+                    prevStep={this.prevStep}    
+                    goTo={this.goToPage}                
                 />)
             case 7:
                 return(
