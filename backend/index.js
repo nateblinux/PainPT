@@ -70,7 +70,8 @@ const generatePrompt = (data) => {
     It happened when ${data.openEnded_question3}
     It gets worse when ${data.openEnded_question4}
     It gets better when ${data.openEnded_question5}
-    It also ${data.openEnded_question6}`;
+    It also ${data.openEnded_question6}
+    Other notes: ${data.finalThoughts}`;
     return prompt;
 }
 
