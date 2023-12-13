@@ -43,6 +43,7 @@ export default class FormMain extends Component{
         openEnded_question4: '',
         openEnded_question5: '',
         openEnded_question6: '',
+        finalThoughts: '',
         message: '', //keep message at bottom
     }
 
